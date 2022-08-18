@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discount Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h2
+      class="text-center text-3xl mt-8  mr-8 text-emerald-500 font-medium underline"
+    >
+      Discount Calculator
+    </h2>
+    <div class="container text-center">
+      <h4 class="ml-12 mt-4 text-blue-600 font-semibold text-2xl">
+        Product Price = <span id="price">390</span> tk
+      </h4>
+      <input
+        id="input-voucher"
+        type="text"
+        class="ml-12 mt-4 border-black border-2 rounded-lg px-3"
+        placeholder="Voucher code"
+      />
+      <button
+        id="apply-btn"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 ml-2 rounded inline-block"
+      >
+        Apply
+      </button>
+
+      <h4 class="ml-8 mt-4 text-red-600 text-1xl font-medium">
+        Price Saved = <span id="line-throughed"><span id="savedPrice">00</span> tk</span> 
+      </h4>
+      <h4 class="ml-8 mt-4 text-green-600 text-1xl font-medium">
+        Price to Pay = <span id="newPrice">00</span> tk
+      </h4>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
